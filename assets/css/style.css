@@ -106,13 +106,13 @@ a {
 }
 
 
-.bod {
+.section {
 	margin:0 auto;
 	max-width:600px;
 	height:200px;
 }
 
-.bodtext{
+.sectiontext{
 	padding:25px;
 	margin-top:30px;
 	font-size:18px;
@@ -123,38 +123,12 @@ a {
 	color:#757575;
 }
 
-.bodhidden{
+.sectionhidden{
 
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.photobar {
-	width:65%;
-	height:100%;
-	left:35%;
-	position:absolute;
-	background:black;
-}
-
-.photobar img{
-	object-fit:cover;
-	height:100%;
-	width:100%;
-	z-index:0;
-}
 
 .aboutbox {
 	z-index:1;
