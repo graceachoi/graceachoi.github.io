@@ -44,12 +44,13 @@ a {
 	font-size:25px;
 	padding-top:150px;
 	font-family: Helvetica Neue;
-	font-weight:200;
+	font-weight:400;
 	letter-spacing: 5px;
+	color:#525252;
 }
 
 .introtitle a{
-	color: #565656;
+	color: #6a6a6a;
 	transition:0.1s;
 }
 
@@ -91,9 +92,9 @@ a {
 }
 
 .link a:hover{
-	color:#fff;
+	color:#333;
 	padding:5px 3px;
-	background:#9bb6e0; /*557a74*/
+	background:#e4eefe; /* BLUE w WHITE TEXT: #9bb6e0 \\ DARK GREEN: 557a74*/
 	transition:0.5s;
 	-webkit-transition:0.2s;
 }
@@ -120,6 +121,9 @@ a {
 	color:#757575;
 }
 
+.bodhidden{
+
+}
 
 
 
