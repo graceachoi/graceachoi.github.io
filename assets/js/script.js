@@ -6,8 +6,11 @@ $(document).ready(function() {
 //    console.log($(window).scrollTop());
 // });
 
-$(".introtitle").click(function() {
+
+
+$(".link.2").click(function() {
   $('.aboutbox').show();
+
 });
 
 
