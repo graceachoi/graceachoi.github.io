@@ -40,71 +40,58 @@ a {
 	background:white;
 }
 
-.mainbar {
-	width:400px;
-	margin:0 auto;
-	height:250px;
+
+
+.head {
+	margin:70px 20px 10px 10%;
+	display:inline-block;
 	text-align:center;
+	font-size:17px;
+	font-family: Karla;
+	font-weight:200;
+	color:#454545;
 
 }
-
-
-.introtitle {
-	position:relative;
-	font-size:25px;
-	padding-top:150px;
-	font-family: Helvetica Neue;
-	font-weight:500;
-	letter-spacing: 3px;
-	color:#525252;
-}
-
-.introtitle a{
+.head a{
 	color: #6a6a6a;
 	transition:0.1s;
 }
-
-.introtitle a:hover{
+.head a:hover{
 	color:#dbdbdb;
 	transition:0.1s;
 }
 
-.subtitle{
-	position:relative;
-	padding:5px 0 5px 0;
-	font-family:San Francisco;
-	font-size:18px;
-	color:#8f8f8f;
-	/* border-bottom:1px solid #ccc; */
-}
-
 
 .linkbar {
-	width:400px;
-	height:25px;
-	margin:0 auto;
 	text-align:center;
+	display:inline-flex;
+	flex-flow: row wrap;
+	margin-bottom:30px;
+	margin-left:10%;
+	/*background:#e7e7e7;*/
+
 }
 
 .link {
 	margin:0 5px;
-	background:#f6f6f6;
 	font-weight:400;
-	font-size:17px;
-	font-family:San Francisco;
+	font-size:15px;
+	padding-right:20px;
 	display:inline-block;
+	font-family:Karla;
+	font-weight:700;
 }
 
 .link a{
-	color:#333;
-	padding:1px 3px;
+	color:#444;
+	padding:2px 0px;
 	transition:0.2s;
+	border-bottom:2px solid #fff;
 }
 
 .link a:hover{
-	color:#333;
-	padding:5px 3px;
-	background:#e4eefe; /* BLUE w WHITE TEXT: #9bb6e0 \\ DARK GREEN: 557a74*/
+	color:#000;
+	border-bottom:2px solid #e7e7e7;
 	transition:0.5s;
 	-webkit-transition:0.2s;
 }
@@ -112,13 +99,13 @@ a {
 
 .section {
 	margin:0 auto;
-	max-width:600px;
+	max-width:650px;
 	height:200px;
 }
 
 .sectiontext{
 	font-size:18px;
-	font-family:San Francisco;
+	font-family:Spectral;
 	font-weight:200;
 	padding:10px 20px;
 	text-align:justify;
