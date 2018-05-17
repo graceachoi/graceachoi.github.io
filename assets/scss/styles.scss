@@ -1,0 +1,220 @@
+body {
+  font-family: Karla;
+}
+
+$red: #F37272;
+$peri: #c3d4f6;
+$currant: #e35b00;
+$lightc: #ff9e63;
+$cobalt: #7592cc;
+$shadow: #2a70d9;
+$darkgrey: #4e4e4e;
+$medgrey: #868686;
+$lightgrey: #e7e7e7;
+$green: #71e6c9;
+$lime: #e0ffaa;
+$break: 767px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+@media (min-width: $break) {
+  .container {
+    display: grid;
+    grid-template-columns: 10% 280px auto 10%;
+    grid-template-rows: auto 1fr auto;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn);
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+@import url(https://fonts.googleapis.com/css?family=Tajawal);
+@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+.gutter{
+  grid-column:span 1;
+  grid-row:span 3;
+  // background-color:blue;
+}
+
+header {
+  grid-column: span 1;
+  font-family:Vollkorn;
+  //border:1px dotted #ccc;
+
+  a {
+    text-decoration:none;
+    font-weight:500;
+    color: $darkgrey;
+    letter-spacing:0.5px;
+    &:hover {color:$medgrey;}
+    }
+
+  @media (min-width: $break) {
+  padding: 52px 30px 0px 0px;
+  text-align:left;
+  a {font-size:1.6em;}
+  }
+
+  @media (max-width:($break - 1px)){
+  padding: 70px 30px 0px 30px;
+  text-align:center;
+  a {font-size:2em;}
+  }
+
+}
+
+
+
+// Link animation variables
+$duration: .2s;
+$distance: 8px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+
+nav {
+  grid-column:span 1;
+  //border:1px dotted #ccc;
+
+  @media (min-width: $break) {
+  text-align:left;
+  padding: 57px 30px 0px 0px;}
+
+  @media (max-width:($break - 1px)) {
+  text-align:center;
+  padding: 25px 30px 0px 20px;}
+
+  a {
+    text-decoration:none;
+    color:$darkgrey;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:0.9em;
+    margin:10px;
+    position:relative;
+
+    @media (min-width: $break) {
+    text-align:left;
+    a {padding: 9px;}
+    }
+
+    @media (max-width:($break - 1px)){
+    text-align:center;
+    a {padding: 9px;}
+    }
+
+    &:before,
+    &:after {
+     content: '';
+     position: absolute;
+     top:20px;
+     bottom: 2px;
+     left: 0; right: 0;
+     height: 2px;
+     background-color: $lightgrey;
+   }
+
+   &:before {
+    opacity: 0;
+    transform: translateY($distance);
+    transition: transform 0s $easeOutBack, opacity 0s;
+    }
+
+    &:after {
+    opacity: 0;
+    transform: translateY($distance/2);
+    transition: transform $duration $easeOutBack, opacity $duration;
+    }
+
+    &:hover,
+    &:focus {
+        &:before,
+        &:after {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        &:before {
+            transition: transform $duration $easeOutBack, opacity $duration;
+        }
+        &:after {
+            transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+        }
+    }
+
+ }
+}
+
+aside {
+  padding: 20px;
+  background-color: #936;
+}
+
+footer {
+  grid-column: span 2;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  border:1px dotted #ccc;
+  color: black;
+}
+
+main {
+  grid-column:span 2;
+  flex:1;
+  line-height:2em;
+
+  @media (min-width: $break) {
+    padding:40px 0px;
+  }
+
+  @media (max-width:($break - 1px)) {
+    padding:40px 7%;
+  }
+
+  p {
+    color: $darkgrey;
+    font-weight:300;
+    letter-spacing:0.5px;
+    font-family:Roboto;
+  }
+}
+
+.post{
+  //border:1px dotted #ccc;
+  max-width:800px;
+  margin: 0 auto;
+}
+
+.bub {
+  width:3em;
+  height:0.4em;
+  margin-top:3em;
+  background-color:$lightgrey;
+  left:0%;
+}
+
+h1 {
+  margin: 1.5em 0em 0.7em;
+  font-size: 2em;
+  font-family:Vollkorn;
+  color:$darkgrey;
+  letter-spacing:1px;
+}
+
+h2 {
+  margin: 1em 0em 0.7em;
+  font-size:0.7em;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-weight:600;
+}

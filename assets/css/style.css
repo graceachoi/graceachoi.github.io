@@ -1,146 +1,157 @@
-/* DOCUMENT SET UP */
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn);
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+@import url(https://fonts.googleapis.com/css?family=Tajawal);
+@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+body {
+  font-family: Karla; }
 
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
+@media (min-width: 767px) {
+  .container {
+    display: grid;
+    grid-template-columns: 10% 280px auto 10%;
+    grid-template-rows: auto 1fr auto; } }
+.gutter {
+  grid-column: span 1;
+  grid-row: span 3; }
 
-body, html {
-	margin: 0 auto;
-	width: 100%;
-	height: 100%;
-	background-color: white;
-	-webkit-font-smoothing: antialiased;
-	-o-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-/*	font-family: San Francisco;*/
-	opacity:1;
-	transition: 1s opacity;
-}
+header {
+  grid-column: span 1;
+  font-family: Vollkorn; }
+  header a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #4e4e4e;
+    letter-spacing: 0.5px; }
+    header a:hover {
+      color: #868686; }
+  @media (min-width: 767px) {
+    header {
+      padding: 52px 30px 0px 0px;
+      text-align: left; }
+      header a {
+        font-size: 1.6em; } }
+  @media (max-width: 766px) {
+    header {
+      padding: 70px 30px 0px 30px;
+      text-align: center; }
+      header a {
+        font-size: 2em; } }
 
+nav {
+  grid-column: span 1; }
+  @media (min-width: 767px) {
+    nav {
+      text-align: left;
+      padding: 57px 30px 0px 0px; } }
+  @media (max-width: 766px) {
+    nav {
+      text-align: center;
+      padding: 25px 30px 0px 20px; } }
+  nav a {
+    text-decoration: none;
+    color: #4e4e4e;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin: 10px;
+    position: relative; }
+    @media (min-width: 767px) {
+      nav a {
+        text-align: left; }
+        nav a a {
+          padding: 9px; } }
+    @media (max-width: 766px) {
+      nav a {
+        text-align: center; }
+        nav a a {
+          padding: 9px; } }
+    nav a:before, nav a:after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      bottom: 2px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #e7e7e7; }
+    nav a:before {
+      opacity: 0;
+      transform: translateY(8px);
+      transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s; }
+    nav a:after {
+      opacity: 0;
+      transform: translateY(4px);
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s; }
+    nav a:hover:before, nav a:hover:after, nav a:focus:before, nav a:focus:after {
+      opacity: 1;
+      transform: translateY(0); }
+    nav a:hover:before, nav a:focus:before {
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s; }
+    nav a:hover:after, nav a:focus:after {
+      transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s; }
 
-.fade-out {
-    opacity: 0;
-    transition: 1s opacity;
-}
+aside {
+  padding: 20px;
+  background-color: #936; }
 
+footer {
+  grid-column: span 2;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  border: 1px dotted #ccc;
+  color: black; }
 
-a {
-	text-decoration: none;
-}
+main {
+  grid-column: span 2;
+  flex: 1;
+  line-height: 2em; }
+  @media (min-width: 767px) {
+    main {
+      padding: 40px 0px; } }
+  @media (max-width: 766px) {
+    main {
+      padding: 40px 7%; } }
+  main p {
+    color: #4e4e4e;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-family: Roboto; }
 
+.post {
+  max-width: 800px;
+  margin: 0 auto; }
 
-/* BASICS/HOMEPAGE */
+.bub {
+  width: 3em;
+  height: 0.4em;
+  margin-top: 3em;
+  background-color: #e7e7e7;
+  left: 0%; }
 
-#container{			/* ? ? ? ? ? ? ? ? */
-	height:100%;
-	width:100%;
-	background:white;
-}
+h1 {
+  margin: 1.5em 0em 0.7em;
+  font-size: 2em;
+  font-family: Vollkorn;
+  color: #4e4e4e;
+  letter-spacing: 1px; }
 
+h2 {
+  margin: 1em 0em 0.7em;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600; }
 
-
-.head {
-	margin:70px 20px 10px 10%;
-	display:inline-block;
-	text-align:center;
-	font-size:17px;
-	font-family: Karla;
-	font-weight:200;
-	color:#454545;
-
-}
-.head a{
-	color: #6a6a6a;
-	transition:0.1s;
-}
-.head a:hover{
-	color:#dbdbdb;
-	transition:0.1s;
-}
-
-
-.linbar {
-	text-align:center;
-	display:inline-flex;
-	flex-flow: row wrap;
-	margin-bottom:30px;
-	margin-left:10%;
-	/*background:#e7e7e7;*/
-
-}
-
-.lin {
-	margin:0 5px;
-	font-weight:400;
-	font-size:15px;
-	padding-right:20px;
-	display:inline-block;
-	font-family:Karla;
-	font-weight:700;
-}
-
-.lin a{
-	color:#444;
-	padding:2px 0px;
-	transition:0.2s;
-	border-bottom:2px solid #fff;
-}
-
-.lin a:hover{
-	color:#000;
-	border-bottom:2px solid #e7e7e7;
-	transition:0.5s;
-	-webkit-transition:0.2s;
-}
-
-
-.section {
-	margin:0 auto;
-	max-width:650px;
-	height:200px;
-}
-
-.sectiontext{
-	font-size:18px;
-	font-family:Spectral;
-	font-weight:200;
-	padding:10px 20px;
-	text-align:justify;
-	line-height:35px;
-	color:#8f8f8f;
-}
-
-.section2{
-	margin:0 auto;
-	max-width:300px;
-	height:200px;
-}
-
-.sectiontext2{
-	font-size:15px;
-	margin-top:30px;
-	font-family:Inconsolata;
-	text-align:center;
-	line-height:20px;
-	color:#757575;
-	border:1px solid #ccc;
-}
-
-.section2.contact {
-	display:none;
-}
-
-.intr {
-	padding: 60px 60px 30px 60px;
-	text-align: center;
-/*	font-family:Helvetica Neue;*/
-	font-size:20px;
-	letter-spacing:1px;
-	color:#757575;
-
-}
-
-
+/*# sourceMappingURL=style.css.map */
