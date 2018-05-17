@@ -164,7 +164,7 @@ footer {
   padding: 30px;
   text-align: center;
   font-size: 1.4em;
-  border:1px dotted #ccc;
+  //border:1px dotted #ccc;
   color: black;
 }
 
@@ -198,13 +198,18 @@ main {
 .bub {
   width:3em;
   height:0.4em;
-  margin-top:3em;
   background-color:$lightgrey;
   left:0%;
 }
 
+.bloc {
+  width:1em;
+  height:2em;
+  //background-color:$green;
+}
+
 h1 {
-  margin: 1.5em 0em 0.7em;
+  margin: 1.5em 0em 0.4em;
   font-size: 2em;
   font-family:Vollkorn;
   color:$darkgrey;
@@ -212,7 +217,16 @@ h1 {
 }
 
 h2 {
-  margin: 1em 0em 0.7em;
+  margin: 0.5em 0em 0.7em;
+  font-size:0.7em;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-weight:600;
+  color:$darkgrey;
+}
+
+h3 {
+  margin: 1em 0em 0.5em;
   font-size:0.7em;
   text-transform:uppercase;
   letter-spacing:2px;
