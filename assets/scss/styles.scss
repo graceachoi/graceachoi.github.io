@@ -224,10 +224,9 @@ h1 {
 
   a{
     text-decoration:none;
-  }
-
-  &:hover{
-    text-decoration:underline;
+    &:hover{
+      text-decoration:underline;
+    }
   }
 }
 

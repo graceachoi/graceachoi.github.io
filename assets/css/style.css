@@ -155,8 +155,8 @@ h1 {
   line-height: 1.5em; }
   h1 a {
     text-decoration: none; }
-  h1:hover {
-    text-decoration: underline; }
+    h1 a:hover {
+      text-decoration: underline; }
 
 h2 {
   margin: 0.5em 0em 0.7em;
