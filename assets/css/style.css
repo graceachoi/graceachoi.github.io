@@ -23,7 +23,8 @@ body {
     grid-template-rows: auto 1fr auto; } }
 .gutter {
   grid-column: span 1;
-  grid-row: span 3; }
+  grid-row: span 3;
+  background-color: blue; }
 
 header {
   grid-column: span 1;
@@ -31,7 +32,7 @@ header {
   header a {
     text-decoration: none;
     font-weight: 500;
-    color: #4e4e4e;
+    color: black;
     letter-spacing: 0.5px; }
     header a:hover {
       color: #868686; }
@@ -57,7 +58,7 @@ nav {
   @media (max-width: 766px) {
     nav {
       text-align: center;
-      padding: 25px 30px 0px 20px; } }
+      padding: 15px 30px 0px 20px; } }
   nav a {
     text-decoration: none;
     color: #4e4e4e;
@@ -126,11 +127,14 @@ main {
     color: #4e4e4e;
     font-weight: 300;
     letter-spacing: 0.5px;
-    font-family: Roboto; }
+    font-family: Roboto;
+    padding: 5px 0px; }
 
 .post {
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto; }
+  .post a {
+    color: black; }
 
 .bub {
   width: 3em;
@@ -146,7 +150,7 @@ h1 {
   margin: 1.5em 0em 0.4em;
   font-size: 2em;
   font-family: Vollkorn;
-  color: #4e4e4e;
+  color: black;
   letter-spacing: 1px; }
 
 h2 {
@@ -163,5 +167,9 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600; }
+
+h4 {
+  font-size: 0.9em;
+  font-style: italic; }
 
 /*# sourceMappingURL=style.css.map */
